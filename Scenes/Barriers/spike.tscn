@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6pmgpw2xc0ob"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_om4ag"]
+
+[node name="Spike" type="Area2D" groups=["Enemy"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_om4ag")

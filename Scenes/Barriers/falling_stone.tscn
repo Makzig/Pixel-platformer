@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://4tcbuk5xni6t"]
+
+[ext_resource type="Script" path="res://Scenes/Barriers/FallingStone.gd" id="1_gxksb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gcbtr"]
+
+[node name="FallingStone" type="Area2D" groups=["Enemy"]]
+script = ExtResource("1_gxksb")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gcbtr")
