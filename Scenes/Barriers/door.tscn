@@ -4,11 +4,11 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i1fwg"]
 
-[sub_resource type="Animation" id="Animation_ljkt6"]
-resource_name = "Idle"
-
 [sub_resource type="Animation" id="Animation_6sdhf"]
 resource_name = "Destroyed"
+
+[sub_resource type="Animation" id="Animation_ljkt6"]
+resource_name = "Idle"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qxia4"]
 _data = {

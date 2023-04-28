@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://br7radvpaygqu"]
+
+[ext_resource type="Texture2D" uid="uid://46fp64pjksix" path="res://icon.svg" id="1_x4jea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hc8ty"]
+size = Vector2(100, 100)
+
+[node name="UIInput" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="XMove" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="MoveLeft" type="TouchScreenButton" parent="XMove"]
+position = Vector2(33, -171)
+texture_normal = ExtResource("1_x4jea")
+shape = SubResource("RectangleShape2D_hc8ty")
+passby_press = true
+action = "move_left"
+
+[node name="MoverRight" type="TouchScreenButton" parent="XMove"]
+position = Vector2(216, -168)
+texture_normal = ExtResource("1_x4jea")
+shape = SubResource("RectangleShape2D_hc8ty")
+passby_press = true
+action = "move_right"
+
+[node name="Vmove" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Up" type="TouchScreenButton" parent="Vmove"]
+position = Vector2(-312, -167)
+texture_normal = ExtResource("1_x4jea")
+shape = SubResource("RectangleShape2D_hc8ty")
+passby_press = true
+action = "jump"
+
+[node name="Other" type="TouchScreenButton" parent="Vmove"]
+position = Vector2(-153, -168)
+texture_normal = ExtResource("1_x4jea")
+shape = SubResource("RectangleShape2D_hc8ty")
+passby_press = true
+action = "down"

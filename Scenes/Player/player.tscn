@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://desiwrs1pjlvo"]
+[gd_scene load_steps=5 format=3 uid="uid://desiwrs1pjlvo"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_aiy3n"]
+[ext_resource type="PackedScene" uid="uid://br7radvpaygqu" path="res://Scenes/GUI/ui_input.tscn" id="2_4gwia"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_md2q5"]
 radius = 13.0
 height = 26.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kj54d"]
+radius = 14.0
 
 [node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_aiy3n")
@@ -22,3 +24,7 @@ shape = SubResource("CapsuleShape2D_md2q5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_kj54d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UIInput" parent="CanvasLayer" instance=ExtResource("2_4gwia")]
